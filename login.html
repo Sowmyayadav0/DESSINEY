@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body><div class="main1">
+    <img src="as.webp" alt="image">
+    <div class="main">
+        <h1><u><b>LOGIN</b></u></h1><br>
+        <input type="email" placeholder="enter your mail" id="user"><br><br>
+        <input type="password" placeholder="password" id="pass"><br><br>
+        <button onclick="login()">LOGIN</button><br>
+        <p>do not have a account?<br>
+            <br><a href="signup.html">signup</a></p>
+    </div></div>
+</body>
+<style>
+    .main1{
+        display:grid;
+        grid-template-columns:60% 40%;
+    }
+    img{
+        grid-column-start:1;
+        padding-left: 50px;
+    }
+    .main{
+        text-align: center;
+        width:fit-content;
+        padding: 100px 100px 100px 100px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        grid-column-start:2;
+    }
+    button{
+        background-color:rgb(18, 239, 18);
+        color:white;
+        height:30px;
+        width:80px;
+        border-radius:3px;
+        border:none;
+    }
+    input{
+        height:25px;
+        width:200px;
+        border:2px solid black;
+    }
+</style>    
+<script>
+    function login(){
+        let username = document.getElementById("user").value;
+        let password = document.getElementById("pass").value;
+        let pass=localStorage.getItem(username);
+        if(pass===password){
+            window.location.href="nav.html";
+        }
+        else{
+            alert("incorrect password!");
+        }
+        }
+</script>
+</html>

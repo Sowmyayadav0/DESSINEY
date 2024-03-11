@@ -1,0 +1,27 @@
+.payment-options {
+    margin: 20px;
+    position: relative;
+    padding-left: 500px;
+    border: 5px solid black;
+    padding-top: 50px;
+    height: 500px;
+  }
+  h2{
+    font-size: 40px;
+
+
+  }
+  
+  .payment-options h2 {
+    margin-bottom: 10px;
+  }
+  button{
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(48, 48, 91);
+    border: none;
+    width: 200px;
+    height: 50px;
+  }
+
+  
